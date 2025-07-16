@@ -1,0 +1,1088 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* CSS Variables */
+:root {
+  --primaryColor: #be9c79;
+  --secondaryColor: #666666;
+  --darkColor: #333333;
+  --lightColor: #ffffff;
+  --greenColor: #167913;
+  --blueColor: #0349a0;
+  --grayColor: #eaeaea;
+  --regularFont: 1.6rem;
+  --headingFont: 2.5rem;
+  --ffPrimary: "Nunito Sans", serif;
+  --ffSecondary: "Merienda", serif;
+  --systemFont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: pretty;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--systemFont);
+  color: var(--secondaryColor);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+  text-wrap: balance;
+}
+
+h1 {
+  font-family: var(--systemFont);
+  color: var(--darkColor);
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+h2 {
+  font-family: var(--systemFont);
+  color: var(--blueColor);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 0.8rem;
+}
+
+h4 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Form Elements */
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  background-color: var(--primaryColor);
+  color: var(--lightColor);
+  cursor: pointer;
+  border: none;
+  padding: 1rem 3rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--darkColor);
+  color: var(--lightColor);
+}
+
+/* Media Elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lists and Links */
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e3e4e6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cececf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b9ba;
+}
+
+/* Layout Components */
+.componentSpacing {
+  padding: 5rem 0rem;
+}
+
+.screenSize {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Grid System */
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0rem 2rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0rem 2rem;
+  gap: 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0rem 1rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0rem 2rem;
+}
+
+.grid-hero {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  padding: 0rem 2rem;
+  gap: 1rem;
+}
+
+.grid-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0rem 1rem;
+}
+
+.grid-scroll {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-nc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Flexbox Utilities */
+.dflex {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+}
+
+.dflexLink {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+}
+
+.dflex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dflex-start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.end {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+
+/* Main Layout */
+header,
+main {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  width: auto;
+  height: 10rem;
+}
+
+/* Navigation */
+.navLinksBox {
+  background-color: var(--greenColor);
+  padding: 1.6rem 0rem;
+}
+
+.navLinksBox ul {
+  color: white;
+  text-align: left;
+}
+
+.navLinksBox li a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 4.4rem;
+  position: relative;
+}
+
+.navIconBox img {
+  width: auto;
+  height: 10.3rem;
+  object-fit: contain;
+}
+
+.navHomeBox {
+  margin-left: 26rem;
+}
+
+.navHomeBox li {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--greenColor);
+  margin-bottom: 4.9rem;
+  margin-left: 2.3rem;
+}
+
+.navLinksBox li a {
+  margin-left: 2rem;
+}
+
+.navLinksBlock #iconToggle {
+  cursor: pointer;
+}
+
+.navLinksBlock .hamburgerIcon {
+  background-color: #167913;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding: 0.25rem 0.75rem 0.1rem;
+
+}
+
+.navLinksBlock #iconToggle {
+  display: none;
+}
+
+.navLinksBlock .hamburgerIcon {
+  display: none;
+}
+
+
+/* Hero Section */
+.heroBox {
+  margin: 3rem 0rem 3rem 3rem;
+  text-align: justify;
+}
+
+.heroBox p {
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #212529;
+  padding-right: 2rem;
+  line-height: 1.8;
+}
+
+.heroImgBox img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 1rem 0rem;
+}
+
+/* Common Header Styles */
+.notifications h6,
+.newsBox h6,
+.linksContentBox h6,
+.galleryBody h6 {
+  color: white;
+  font-size: 1.6rem;
+  background-color: var(--greenColor);
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
+
+.notifications h6 {
+  padding-left: 1rem;
+}
+
+.newsHeadBlock h6 {
+  background-color: var(--greenColor);
+  color: white;
+  padding: 1rem 1rem;
+  margin: 0rem 0rem 1.6rem;
+  font-size: 1.6rem;
+}
+
+.galleryBody h6 {
+  margin: 0rem 0rem 1rem;
+}
+
+/* Info Box */
+.moreInfoBox {
+  font-size: 1.4rem;
+  background-color: #343a40;
+  padding: 1.8rem;
+}
+
+.moreInfoBox p {
+  color: #c4c4c4;
+}
+
+.ssk {
+  color: white;
+  font-weight: bold;
+}
+
+.moreInfoBody {
+  background-color: #6351ce;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.infoBox p {
+  padding-left: 20rem;
+  color: white;
+  font-weight: 500;
+}
+
+.infoSocBox {
+  padding-left: 50rem;
+}
+
+/* Status Indicators */
+.current {
+  font-weight: 700;
+  color: var(--greenColor);
+  padding: 2rem;
+}
+
+.past {
+  background-color: var(--greenColor);
+  color: white;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+}
+
+/* Containers with Overflow */
+.notificationsCirBlock,
+.notificationsCalBlock,
+.notificationsEveBlock {
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.notificationsCalBlock,
+.notificationsEveBlock {
+  height: 500px;
+}
+
+.eventContainer {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* List Items */
+marquee li,
+.featuredLink li {
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--grayColor);
+  padding: 1rem;
+  height: fit-content;
+}
+
+.notification {
+  padding: 0.5rem 0rem;
+}
+
+.eventsLink {
+  padding: 0.5rem 0rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid var(--greenColor);
+}
+
+.eventData {
+  border-bottom: var(--grayColor) 2px solid;
+}
+
+/* Calendar */
+.cal a {
+  color: black;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: var(--systemFont);
+}
+
+.june {
+  font-size: 1.6rem;
+  margin: 1rem 0rem 0rem 0rem;
+  background-color: var(--grayColor);
+  text-align: center;
+}
+
+.cala {
+  color: #555555;
+}
+
+.cala th {
+  background-color: var(--grayColor);
+}
+
+.cala td {
+  background-color: var(--grayColor);
+  font-weight: bold;
+  padding: 1.5rem 2.5rem 2rem 2rem;
+}
+
+.calaDate {
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  background-color: var(--greenColor);
+  border-radius: 10%;
+}
+
+.calContent {
+  margin: 0rem 1rem;
+}
+
+.calContent a {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.calContent p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* News Section */
+.newsBlock {
+  margin-right: 2rem;
+}
+
+.newsBox {
+  max-width: 100%;
+}
+
+.newsBody {
+  /* padding: 0rem 1.6rem; */
+}
+
+.newsBox img {
+  width: 22rem;
+  height: 18rem;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsBox h3 {
+  background-color: var(--grayColor);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.newsContentBlock {
+  margin: 0rem 1.6rem;
+  width: 30rem;
+}
+
+.newsCard h5 {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1rem;
+  color: #424242;
+  background-color: #efeded;
+}
+
+.newsScrollBlock {
+  font-size: 24pt;
+  color: var(--greenColor);
+}
+
+.newsScrollTwoBlock {
+  padding-top: 3rem;
+  float: right;
+  padding-left: 28rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--greenColor);
+}
+
+/* Card Components */
+.card {
+  padding: 1rem 0.5rem;
+  width: 30rem;
+  height: auto;
+}
+
+.cardHead img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1%;
+}
+
+.comMainTwo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--greenColor);
+}
+
+/* Video and Gallery Cards */
+.videoCardMain {
+  text-align: center;
+  background-color: #efeded;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.videoCardFooter,
+.alumniCardFooter,
+.galleryCardFooter {
+  font-size: 1.3rem;
+  padding: 0rem 0rem 1.5rem;
+  font-weight: bold;
+  color: var(--greenColor);
+  text-align: right;
+  margin: 1rem 0.5rem 0rem 0rem;
+}
+
+.alumniCard img {
+  width: 12.3rem;
+  height: 12.3rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #efeded;
+}
+
+.studentName {
+  margin: 1.5rem 0rem 0.5rem;
+  color: var(--greenColor);
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.role,
+.work {
+  margin: 0rem 0rem 0.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #999999;
+}
+
+.studies {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #999999;
+  margin: 0rem 0rem 0.5rem;
+}
+
+.galleryCardMain p {
+  font-weight: 300;
+  color: white;
+  text-align: left;
+  background-color: #060606a8;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.gallery {
+  font-family: var(--systemFont);
+}
+
+.galleryLatBlock {
+  padding: 0rem 1.5rem;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #9a5d53;
+  padding: 8.3rem 0rem;
+}
+
+.quoteBox i {
+  border: white 2px solid;
+  border: circle;
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 16pt;
+}
+
+.quote p {
+  font-style: italic;
+  color: white;
+}
+
+.quote i {
+  color: white;
+}
+
+/* Links Section */
+.linksContentBlock {
+  padding-left: 1.5rem;
+}
+
+.linksPageBox h6,
+.linksBox h6,
+.linkspBox h6 {
+  padding: 0rem 0rem 0.5rem;
+  margin: 0rem 0rem 0.8rem;
+}
+
+.linksBox i {
+  color: var(--greenColor);
+  padding: 0rem 1rem;
+}
+
+.linksBox p,
+.linkspBox p {
+  color: black;
+  font-size: 1.3rem;
+  padding: 0rem 0rem 0.5rem;
+}
+
+.linkspBox p {
+  padding: 0;
+}
+
+.moreInfo h6 {
+  color: black;
+  font-weight: bold;
+  border-bottom: 3px solid var(--greenColor);
+  font-size: 1.9rem;
+}
+
+.moreInfo li {
+  color: black;
+  font-size: 1.3rem;
+  padding: 0rem 0rem 0.5rem;
+}
+
+/* Social Media Icons */
+.youTube {
+  color: red;
+  font-size: 3rem;
+  padding: 0rem 0.5rem;
+}
+
+.faceBook {
+  color: white;
+  font-size: 3rem;
+  padding: 0rem 0.5rem;
+}
+
+.page {
+  font-size: 3rem;
+  color: var(--greenColor);
+  font-weight: bold;
+}
+
+/* Footer */
+.endIcon i {
+  color: var(--greenColor);
+  font-size: large;
+}
+
+.endAdd {
+  padding: 0rem 1.8rem 1.5rem;
+}
+
+.fe {
+  font-size: 1.1rem;
+  color: #999999;
+}
+
+.useful {
+  padding: 0rem 0rem 0rem 2rem;
+  font-weight: 400;
+}
+
+.address {
+  font-weight: 400;
+}
+
+.fas {
+  font-weight: bold;
+}
+
+/* componentBackgroundColor code starts here*/
+
+.navContainer{
+  background-color: lightyellow;
+}
+.heroContainer{
+  background-color:lightcoral;
+}
+.notificationsContainer{
+  background-color: skyblue;
+}
+.newsContainer{
+  background-color: #ffd54f
+}
+.galleryContainer{
+  background-color: #b9f6ca;
+}
+.quoteContainer{
+  background-color: #a7ffe8;
+}
+.moreInfoContainer{
+  background-color:#ffccbc;
+}
+/* componentBackgroundColor code ends here*/
+
+
+/* Mobile Responsive: max-width 576px */
+@media (max-width: 576px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .screenSize {
+    padding: 0 1rem;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-hero,
+  .grid-news,
+  .grid-scroll,
+  .grid-nc {
+    grid-template-columns: 1fr !important;
+    padding: 0rem 1rem;
+  }
+
+  /* Typography adjustments for mobile */
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  .dflex li a{
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .navHomeBox{
+    padding-left: 0rem;
+    margin-left: 0;
+  }
+
+  .navHomeBox li {
+    margin-left: 0;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .dflexLink {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .dflex-col {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .dflex-col {
+    align-items: center;
+    text-align: center;
+  }
+
+  .navLinksBox li a {
+    margin-left: 2rem;
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  .navLinksBlock .hamburgerIcon {
+    display: block;
+    position: left;
+    top: 3.5rem;
+    right: 3rem;
+    cursor: pointer;
+  }
+
+  .navLinksBox {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+
+  #iconToggle:checked~.navLinksBox {
+    display: flex;
+  }
+
+  .navIconBox img {
+    height: 8rem;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .heroBox {
+    margin: 2rem 1rem;
+    text-align: left;
+  }
+
+  .heroBox p {
+    padding-right: 0;
+    font-size: 1.5rem;
+  }
+
+  .heroImgBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .infoBox p,
+  .infoSocBox {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .newsBox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .newsScrollTwoBlock{
+    padding: 1rem 0rem;
+    float: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .newsContentBlock,
+  .card {
+    width: 100%;
+  }
+
+  .cardHead img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .videoCardFooter,
+  .alumniCardFooter,
+  .galleryCardFooter {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .alumniCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .alumniCard img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #efeded;
+    margin: auto;
+  }
+
+  .studentName {
+    font-size: 1.5rem;
+  }
+
+  .role,
+  .work,
+  .studies {
+    font-size: 1.3rem;
+  }
+
+  .quote {
+    padding: 4rem 1rem;
+  }
+
+  .quote p {
+    font-size: 1.4rem;
+  }
+
+  .linksContentBlock {
+    padding-left: 0;
+  }
+
+  .linksBox p,
+  .linkspBox p {
+    font-size: 1.2rem;
+  }
+
+  .moreInfo h6 {
+    font-size: 1.6rem;
+  }
+
+  .moreInfo li {
+    font-size: 1.2rem;
+  }
+
+  .galleryLatBlock {
+    padding: 0rem 1rem;
+  }
+
+  .galleryCardMain p {
+    font-size: 1.2rem;
+  }
+
+  .calContent {
+    margin: 1rem 0;
+  }
+
+  .calContent a {
+    font-size: 1.2rem;
+  }
+
+  .calContent p {
+    font-size: 1.1rem;
+  }
+
+  .cal a {
+    font-size: 1.7rem;
+  }
+
+  .june {
+    font-size: 1.4rem;
+  }
+
+  .cala td {
+    padding: 1rem 1.5rem 1.5rem 1rem;
+  }
+
+  .endAdd,
+  .useful,
+  .address {
+    padding: 0 2rem;
+  }
+
+  .fe {
+    font-size: 1rem;
+  }
+
+  .moreInfoBox,
+  .moreInfoBody {
+    padding: 1rem;
+  }
+
+  .moreInfoBox {
+    font-size: 1.3rem;
+  }
+
+  .linksBox i {
+    padding: 0 0.5rem;
+  }
+  
+  .infoSocBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .youTube,
+  .faceBook {
+    font-size: 2.5rem;
+  }
+
+  .page {
+    font-size: 2.5rem;
+  }
+
+  .newsScrollBlock {
+    font-size: 18pt;
+  }
+
+  .videoCardMain {
+    font-size: 1.4rem;
+  }
+
+  .comMainTwo {
+    font-size: 1.4rem;
+  }
+
+  .newsCard h5 {
+    font-size: 1.3rem;
+  }
+
+  .newsBox h3 {
+    font-size: 1.3rem;
+  }
+
+  marquee li,
+  .featuredLink li {
+    font-size: 1.2rem;
+  }
+
+  .notifications h6,
+  .newsBox h6,
+  .linksContentBox h6,
+  .galleryBody h6,
+  .newsHeadBlock h6 {
+    font-size: 1.4rem;
+  }
+}

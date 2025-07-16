@@ -1,0 +1,494 @@
+.slide-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+    margin-left:80px;
+    margin-right:80px;
+}
+
+@media (max-width: 575.98px) {
+  .slide-section {  
+    margin-left:20px;
+    margin-right:20px;
+  }
+ }
+
+ @media (max-width: 767.98px) {
+  .slide-section {  
+    margin-left:20px;
+    margin-right:20px;
+  }
+ }
+
+ @media (max-width: 1200.98px)
+ {
+  .slide-section {  
+    margin-left:20px;
+    margin-right:20px;
+  }
+ }
+table.calendar caption.calhead{
+  caption-side: top;
+}
+
+
+
+
+ 
+.home .recent-news .card img {
+
+    border-bottom: 0px solid #fff;
+}
+
+.home .recent-news .card .card-body {
+    background-color: #fff;
+
+}
+.home .recent-news .card:hover img {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
+.gallery-slide .carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+    left: 0%;
+    z-index: 10;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.gallery-slide .carousel-caption p {
+    margin: 0px;
+    padding: 2px 8px 2px 8px;
+    text-align: left;
+    font-size: 13px;
+}
+.gallery-slide .carousel-item  img {
+    
+    height: 240px;
+    object-fit: cover;
+   
+}
+
+
+
+
+
+
+
+
+
+.home-section {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 50px 0;
+    margin: 50px 0;
+    text-align: center;
+    background-size: cover !important;
+}
+.home-section:before {
+    content: '';
+    position: absolute;
+    background: rgba(8, 39, 93, 0.9);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home-section1 {
+    
+    background: rgba(8, 39, 93, 0.9);
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+.home-section p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+#counter {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.home-section .icon-boder {
+  height: 137px;
+  width: 137px;
+  margin: 0 auto 20px;
+  border: solid 2px #fff;
+  text-align: center;
+  border-radius: 20%;
+  line-height: 124px;
+}
+.counter-value {
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 32px;
+}
+.home-section span {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+
+.home-section .home-title .section-heading-1 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.home-section .home-title .section-heading-1 h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.home-section .home-title .kode-icon {
+    float: left;
+    width: 100%;
+    color: #fff;
+}
+.home-section .home-title .section-heading-1 .kode-icon:before, .home-section .home-title .section-heading-1 .kode-icon:after {
+    content: "";
+    position: absolute;
+    left: 35%;
+    margin: auto;
+    bottom: 14px;
+    width: 150px;
+    height: 1px;
+    background-color: #fff;
+}
+.home-section .home-title .section-heading-1 i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.home-section .home-title  .section-heading-1 .kode-icon:after {
+    left: auto;
+    right: 35%;
+}
+
+.slide-section .slide-content h2
+{
+  padding-top:20px; 
+  font-size: 18pt;
+  font-weight: bold;
+  text-transform: uppercase; 
+  color:#0943a0
+}
+.slide-section .slide-content p
+{
+  font-size: 13pt;
+  text-align: justify;
+  line-height: 1.8;
+  
+}
+.home-events .event table tr td .date {
+border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-slider .col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.home-slider .carousel {
+	padding: 0 70px;
+}
+.home-slider .carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 290px;
+}
+.home-slider .carousel .carousel-item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.home-slider .carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.home-slider .carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.home-slider .carousel .overview {	
+	font-style: italic;
+}
+.home-slider .carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.home-slider .carousel-control-prev, .carousel-control-next {
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	top: 50%;
+	background: none;
+}
+.home-slider .carousel-control-prev i, .carousel-control-next i {
+  font-size: 38px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: rgb(171 171 171 / 80%);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.home-slider .carousel-indicators {
+	bottom: -40px;
+}
+.home-slider .carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	margin: 1px 3px;
+	border-radius: 50%;
+	border: none;
+}
+.home-slider .carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.home-slider .carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
+.home-section:before .bg1{
+  background-color:#F5F5F5;
+}
+
+
+i.slide-icon-next-prev{
+  color:#167913;
+  cursor: pointer;
+  font-size:24pt;
+}
+
+.swiper {
+      width: 100%;
+      height: auto !important;
+    
+      
+
+
+    }
+    
+
+
+
+/*-----------------heading -----------*/
+h6.home-title2 {
+  font-size: 1.4rem;
+  position: relative;
+background-image: repeating-linear-gradient(-45deg, #b7b7b7 , #b7b7b7 1px, transparent 0, transparent 50%);
+  background-size: 9px 9px;
+      border-left: 5px solid #007bff;
+      padding-left: 15px;
+      margin-bottom: 15px;
+}
+
+ h6 span {
+  background-color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: 700;
+ 
+}
+
+
+/*-----------------home why choose us --------*/
+
+.home-why-choose .bg-dark {
+    background: #1a2844 !important;
+}
+
+.home-why-choose .bg-holder {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.home-why-choose .section-title {
+    margin-bottom: 50px;
+}
+
+
+.home-why-choose .section-title .title {
+    margin-bottom: 20px;
+}
+
+
+.home-why-choose h5{
+  color:#fff;
+  position: relative;
+  font-size:27px;
+  font-weight: 700;
+  
+}
+
+.home-why-choose ul{
+  list-style: none;
+  padding-left:20px;
+}
+.home-why-choose ul li{
+  color:#fff;
+  font-size:15pt;
+  padding-bottom: 20px;
+  display: block;
+  clear: both;
+}
+
+.home-why-choose ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f19d";
+  display: inline-block;
+  padding-right: 13px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.home-why-choose ul li i{
+  color:#fff;
+
+}
+.home-why-choose .latest-news h3 {
+    position: relative;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-top:50px;
+   
+}
+.home-why-choose .latest-news h3:after {
+    content: '';
+    background: #ffffff;
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.home-alumni .name{
+  color:#0943a0;
+  font-size: 13pt;
+  margin-bottom:5px;
+  margin-top:15px;
+  font-weight: bold;
+}
+
+.home-alumni .designation, .home-alumni .place {
+  color:#999;
+  font-size: 11pt;
+  margin-bottom:5px;
+}
+
+
+
+.home-slider .carousel.home-alumni-list .carousel-item {
+    
+    min-height: 150px;
+}
+
+
+
+
+
+.home-quote blockquote{
+  font-size: 1em;
+ 
+  margin:20px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  
+  padding:1.2em 30px 1.2em 75px;
+
+  line-height:1.6;
+  position: relative;
+  
+}
+
+.home-quote blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.home-quote blockquote::after{
+  content: '';
+}
+
+.home-quote blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+
