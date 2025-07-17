@@ -756,7 +756,6 @@ marquee li,
   box-sizing: border-box;
   text-wrap: pretty;
   border:1px solid red;
-  /* background-color: lightyellow; */
 }
 .heroContainer{
   box-sizing: border-box;
