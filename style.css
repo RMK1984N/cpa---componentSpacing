@@ -24,7 +24,7 @@
   padding: 0;
   box-sizing: border-box;
   text-wrap: pretty;
-  border:1px solid red;
+  /* border:1px solid red; */
 }
 
 html {
@@ -752,27 +752,48 @@ marquee li,
 
 /* componentBackgroundColor code starts here*/
 
-/* .navContainer{
-  background-color: lightyellow;
+.navContainer{
+  box-sizing: border-box;
+  text-wrap: pretty;
+  border:1px solid red;
+  /* background-color: lightyellow; */
 }
 .heroContainer{
-  background-color:lightcoral;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  border:1px solid red;
+  /* background-color:lightcoral; */
 }
 .notificationsContainer{
-  background-color: skyblue;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  border:1px solid red;
+  /* background-color: skyblue; */
 }
 .newsContainer{
-  background-color: #ffd54f
+  box-sizing: border-box;
+  text-wrap: pretty;
+  border:1px solid red;
+  /* background-color: #ffd54f */
 }
 .galleryContainer{
-  background-color: #b9f6ca;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  border:1px solid red;
+  /* background-color: #b9f6ca; */
 }
 .quoteContainer{
-  background-color: #a7ffe8;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  border:1px solid red;
+  /* background-color: #a7ffe8; */
 }
 .moreInfoContainer{
-  background-color:#ffccbc;
-} */
+  box-sizing: border-box;
+  text-wrap: pretty;
+  border:1px solid red;
+  /* background-color:#ffccbc; */
+}
 /* componentBackgroundColor code ends here*/
 
 
