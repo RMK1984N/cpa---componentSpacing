@@ -24,6 +24,7 @@
   padding: 0;
   box-sizing: border-box;
   text-wrap: pretty;
+  border:1px solid red;
 }
 
 html {
@@ -751,7 +752,7 @@ marquee li,
 
 /* componentBackgroundColor code starts here*/
 
-.navContainer{
+/* .navContainer{
   background-color: lightyellow;
 }
 .heroContainer{
@@ -771,7 +772,7 @@ marquee li,
 }
 .moreInfoContainer{
   background-color:#ffccbc;
-}
+} */
 /* componentBackgroundColor code ends here*/
 
 
